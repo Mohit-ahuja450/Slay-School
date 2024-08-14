@@ -1,6 +1,6 @@
-// src/components/InviteFriends.js
 import React, { useEffect, useState } from 'react';
 import { Container, Paper, Typography, Button, TextField } from '@mui/material';
+import Footer from './Footer';  // Import the Footer component
 
 const InviteFriends = () => {
   const [referralCode, setReferralCode] = useState('');
@@ -16,28 +16,31 @@ const InviteFriends = () => {
   }, []);
 
   return (
-    <Container maxWidth="sm" style={{ marginTop: '20px' }}>
-      <Paper elevation={3} style={{ padding: '20px' }}>
-        <Typography variant="h6" gutterBottom>
-          Invite Friends
-        </Typography>
-        <Typography variant="body1">
-          Invite a friend to continue uploading! Get a friend to sign up using your referral code to receive 2 free uploads!
-        </Typography>
-        <TextField
-          value={referralCode}
-          variant="outlined"
-          margin="normal"
-          fullWidth
-          InputProps={{
-            readOnly: true,
-          }}
-        />
-        <Button variant="contained" color="primary" fullWidth>
-          Share Invite Link
-        </Button>
-      </Paper>
-    </Container>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <Container maxWidth="sm" style={{ marginBottom: '5px', marginTop: '-255px' }}>
+        <Paper elevation={3} style={{ padding: '20px' }}>
+          <Typography variant="h6" gutterBottom>
+            Invite Friends
+          </Typography>
+          <Typography variant="body1">
+            Invite a friend to continue uploading! Get a friend to sign up using your referral code to receive 2 free uploads!
+          </Typography>
+          <TextField
+            value={referralCode}
+            variant="outlined"
+            margin="normal"
+            fullWidth
+            InputProps={{
+              readOnly: true,
+            }}
+          />
+          <Button variant="contained" color="primary" fullWidth>
+            Share Invite Link
+          </Button>
+        </Paper>
+      </Container>
+      <Footer />
+    </div>
   );
 };
 

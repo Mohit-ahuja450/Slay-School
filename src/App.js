@@ -11,6 +11,7 @@ import AccountSettingsPage from './pages/AccountSettingsPage';
 import Login from './components/Login';
 import { createCustomTheme } from './theme'; // Correct import
 import HomePage from './pages/HomePage';
+import PremiumPage from './pages/PremiumPage';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -46,7 +47,7 @@ function App() {
               <Route path="/upload" element={<UploadPage />} />
               <Route path="/invite-friends" element={<InviteFriendsPage />} />
               <Route path="/account-settings" element={<AccountSettingsPage />} />
-              <Route path="/upgrade" element={<h1>Upgrade to Premium</h1>} />
+              <Route path="/upgrade" element={<PremiumPage />} />
             </>
           ) : (
             <Route path="/" element={<Navigate to="/login" />} />

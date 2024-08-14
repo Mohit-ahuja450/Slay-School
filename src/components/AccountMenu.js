@@ -1,43 +1,42 @@
-// src/components/AccountMenu.js
 import React, { useState } from 'react';
-import { Button, Menu, MenuItem, Switch, Typography } from '@mui/material';
+import { Container, Paper, Typography, Button, Grid } from '@mui/material';
+import Footer from './Footer';
 
 const AccountMenu = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const [darkMode] = useState(false);
 
   return (
-    <div>
-      <Button color="inherit" onClick={handleClick}>
-        Account & Settings
-      </Button>
-      <Menu
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={toggleDarkMode}>
-          <Typography variant="body1">Dark Mode</Typography>
-          <Switch checked={darkMode} onChange={toggleDarkMode} />
-        </MenuItem>
-        <MenuItem onClick={handleClose}>Export Notes</MenuItem>
-        <MenuItem onClick={handleClose}>Contact Support</MenuItem>
-        <MenuItem onClick={handleClose}>Join Discord</MenuItem>
-        <MenuItem onClick={handleClose}>Account Settings</MenuItem>
-      </Menu>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <Container maxWidth="sm" style={{ marginBottom: '5px', marginTop: '-255px' }}>
+        <Paper elevation={3} style={{ padding: '30px', textAlign: 'center' }}>
+          <Typography variant="h5" gutterBottom>
+            Account & Settings
+          </Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Button variant="contained" color="primary" fullWidth>
+                Export Notes
+              </Button>
+            </Grid>
+            <Grid item xs={12}>
+              <Button variant="contained" color="primary" fullWidth>
+                Contact Support
+              </Button>
+            </Grid>
+            <Grid item xs={12}>
+              <Button variant="contained" color="primary" fullWidth>
+                Join Discord
+              </Button>
+            </Grid>
+            <Grid item xs={12}>
+              <Button variant="contained" color="primary" fullWidth>
+                Account Settings
+              </Button>
+            </Grid>
+          </Grid>
+        </Paper>
+      </Container>
+      <Footer />
     </div>
   );
 };
