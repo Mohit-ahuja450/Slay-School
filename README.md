@@ -1,75 +1,80 @@
-<<<<<<< HEAD
 # Slay-School
-Slay School Test Repo
-=======
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Slay School is a modern web application that allows users to create instant flashcards, quizzes, and study material from various sources like files, videos, links, or handwritten notes. The app is designed to be user-friendly, accessible on any device, and supports multiple languages.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Instant Flashcards & Quizzes**: Generate flashcards and multiple-choice questions from lectures, videos, and other study material.
+- **AI-Powered Writing Assistant**: Paraphrase text and make it sound more academic using our AI tools.
+- **Upload Notes**: Upload notes via PDF, URL, or manual input and convert them into easy-to-study flashcards.
+- **Invite Friends & Referral System**: Invite friends to join Slay School and earn additional uploads.
+- **Account Settings**: Manage account preferences, including dark mode and other settings.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js with Material-UI for design.
+- **Backend**: Node.js with Express.js, integrated with APIs for AI-based text processing.
+- **Deployment**: The app is deployed using services like Vercel or Netlify for the frontend, and Heroku for the backend.
+- **Version Control**: Git & GitHub for source code management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js installed on your machine.
+- A GitHub account.
+- Basic knowledge of React.js and Node.js.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Mohit-ahuja450/Slay-School.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd Slay-School
+    ```
+3. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Start the development server**:
+    ```bash
+    npm start
+    ```
+    The app will open at `http://localhost:3000` in your default browser.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Start the backend server**:
+    If you have the backend setup locally, navigate to the backend folder and run:
+    ```bash
+    node server.js
+    ```
+    The backend will be available at `http://localhost:5000`.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To deploy the frontend on a platform like Vercel or Netlify, follow their specific instructions for deploying React apps.
 
-### `npm run build` fails to minify
+To deploy the backend, use platforms like Heroku and follow their instructions for Node.js apps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 853c5db (Initialize project using Create React App)
+## Contributing
+
+We welcome contributions! Please fork the repository, create a new branch, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Create React App](https://github.com/facebook/create-react-app) for the project setup.
+- Material-UI for the React components.
+- GitHub for source code hosting.
+
+## Contact
+
+For any queries or issues, please contact [Mohit Ahuja](mailto:mohitahuja450@gmail.com).
